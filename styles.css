@@ -15,7 +15,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 8px;
+    /* gap: 8px; */
 }
 .box {
   border-style: solid;
@@ -24,12 +24,15 @@ body {
   padding: 3rem;
 }
 
-.box1 { background-color: brown; border: 0 0 5px 5px; }
-.box2 { background-color: red; border-bottom: 5px solid #000;}
-.box3 { background-color: yellow; border-bottom: 5px solid #000;}
-.box4 { background-color: blue;}
-.box5 { background-color: yellowgreen;}
-.box6 { background-color: orangered;}
-.box7 { background-color: magenta;}
-.box8 { background-color: mediumseagreen;}
-.box9 { background-color: aliceblue;}
+.box1 { background-color: brown;        border-width: 0 5px 5px 0; }
+.box2 { background-color: red;          border-width: 0 5px 5px 5px; }
+.box3 { background-color: yellow;       border-width: 0 0   5px 5px; }
+
+.box4 { background-color: blue;         border-width: 5px 5px 5px 0; }
+.box5 { background-color: yellowgreen;  border-width: 5px; }
+.box6 { background-color: orangered;    border-width: 5px 0 5px 5px; }
+
+.box7 { background-color: magenta;      border-width: 5px 5px 0 0; }
+.box8 { background-color: mediumseagreen; border-width: 5px 5px 0 5px; }
+.box9 { background-color: aliceblue;    border-width: 5px 0 0 5px; }
+

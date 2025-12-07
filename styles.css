@@ -15,16 +15,18 @@ body {
 .container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
 }
 .box {
-    background-color: red;
-    border: 2px solid green;
-    padding: 3rem;
+  border-style: solid;
+  border-color: black; /* or your color */
+  border-width: 0; /* all borders hidden by default */
+  padding: 3rem;
 }
 
-.box1 { background-color: brown;}
-.box2 { background-color: red;}
-.box3 { background-color: yellow;}
+.box1 { background-color: brown; border: 0 0 5px 5px; }
+.box2 { background-color: red; border-bottom: 5px solid #000;}
+.box3 { background-color: yellow; border-bottom: 5px solid #000;}
 .box4 { background-color: blue;}
 .box5 { background-color: yellowgreen;}
 .box6 { background-color: orangered;}

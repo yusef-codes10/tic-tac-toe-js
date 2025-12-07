@@ -6,4 +6,28 @@
 
 body {
     background-color: aqua;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.box {
+    background-color: red;
+    border: 2px solid green;
+    padding: 3rem;
+}
+
+.box1 { background-color: brown;}
+.box2 { background-color: red;}
+.box3 { background-color: yellow;}
+.box4 { background-color: blue;}
+.box5 { background-color: yellowgreen;}
+.box6 { background-color: orangered;}
+.box7 { background-color: magenta;}
+.box8 { background-color: mediumseagreen;}
+.box9 { background-color: aliceblue;}

@@ -27,6 +27,9 @@ function assignBox(e) {
 //  3 4 5 
 //  6 7 8 
 
-function trackPosition() {
+function trackPosition(element) {
     // check the textContent of that container if it's x than get all x positions
+    if (element.textContent === 'x') {
+        // get the index
+    }
 }

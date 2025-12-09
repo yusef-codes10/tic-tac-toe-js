@@ -20,12 +20,21 @@ function assignBox(e) {
         isX = true;
     }
     // console.log(e.target);
+    trackOPositions();
+    trackXPosition();
 }
 
 // The idea is that we need to track the position of the x or o using a formula of: 
 //  0 1 2
 //  3 4 5 
 //  6 7 8 
+
+// ! Track indexes not elemets, store the indexx in the new generated array, that would be way easier to do when tracking who won
+// !So eventually, move toward:
+
+// “Does my X array contain 0,1,2?”
+// instead of
+// “Does my X array contain the DOM nodes representing boxes 0,1,2?”
 
 
 // use this function in foreach loop for the node list 

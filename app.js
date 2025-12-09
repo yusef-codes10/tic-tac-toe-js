@@ -20,8 +20,8 @@ function assignBox(e) {
         isX = true;
     }
     // console.log(e.target);
-    trackOPositions();
-    trackXPosition();
+    // trackOPositions();
+    // trackXPosition();
     gameResult(trackOPositions, trackXPosition);
 }
 

@@ -40,9 +40,8 @@ function assignBox(e) {
 
 // use this function in foreach loop for the node list 
 function trackXPosition() {
-    console.log('trackPosiitons()');
     let xPositions = [];
-    console.log(boxes);
+    // console.log(boxes);
     // check the textContent of that container if it's x than get all x positions
         for (let i = 0; i < boxes.length; i++) {
             if (boxes[i].textContent === 'x') {
@@ -54,9 +53,8 @@ function trackXPosition() {
 }
 
 function trackOPositions() {
-    console.log('trackPosiitons()');
     let oPositions = [];
-    console.log(boxes);
+    // console.log(boxes);
     // check the textContent of that container if it's x than get all x positions
         for (let i = 0; i < boxes.length; i++) {
             if (boxes[i].textContent === 'o') {

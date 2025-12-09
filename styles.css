@@ -21,7 +21,16 @@ body {
   border-style: solid;
   border-color: black; /* or your color */
   border-width: 0; /* all borders hidden by default */
-  padding: 3rem;
+  /* padding: 3rem; */
+
+  font-size: 4rem;
+  font-weight: 900;
+  /* box-sizing: border-box; */
+  height: 100px;
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .box1 { background-color: brown;        border-width: 0 5px 5px 0; }

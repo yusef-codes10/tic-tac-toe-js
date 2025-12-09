@@ -104,3 +104,11 @@ function gameResult(trackXPosition, trackOPositions) {
 }
 
 
+
+
+// TODO 1- win function
+// TODO 2- cpu random option
+
+//  TODO Choose x or O
+// TODO sound effects
+

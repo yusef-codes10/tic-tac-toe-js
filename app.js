@@ -27,9 +27,14 @@ function assignBox(e) {
 //  3 4 5 
 //  6 7 8 
 
+
+// use this function in foreach loop for the node list 
 function trackPosition(element) {
     // check the textContent of that container if it's x than get all x positions
     if (element.textContent === 'x') {
         // get the index
-    }
+
+    } else if (element.textContent === 'y') {
+        
+    } else return;
 }

@@ -22,6 +22,7 @@ function assignBox(e) {
     // console.log(e.target);
     trackOPositions();
     trackXPosition();
+    gameResult(trackOPositions, trackXPosition);
 }
 
 // The idea is that we need to track the position of the x or o using a formula of: 
@@ -69,4 +70,14 @@ function trackOPositions() {
 function gameResult(trackXPosition, trackOPositions) {
     const oS = trackOPositions();
     const xS = trackXPosition();
+    switch (oS) {
+        case [0,1,2].every(number => oS.includes(number)):
+            console.log(' YES it DOES');
+            break;
+    
+        default:
+            console.log('not yet');
+            break;
+    }
 }
+

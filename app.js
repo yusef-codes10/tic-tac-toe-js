@@ -19,7 +19,6 @@ function assignBox(e) {
         e.target.textContent = 'o';
         isX = true;
     }
-    trackPosition();
     // console.log(e.target);
 }
 
@@ -30,16 +29,30 @@ function assignBox(e) {
 
 
 // use this function in foreach loop for the node list 
-function trackPosition() {
+function trackXPosition() {
     console.log('trackPosiitons()');
-    let winPositions = [];
+    let xPositions = [];
     console.log(boxes);
     // check the textContent of that container if it's x than get all x positions
-
         for (let i = 0; i < boxes.length; i++) {
             if (boxes[i].textContent === 'x') {
-                winPositions.push(boxes[i]);
+                xPositions.push(boxes[i]);
             }
         }
-        console.log(winPositions);
+        console.log(xPositions);
+        return xPositions;
+}
+
+function trackOPositions() {
+    console.log('trackPosiitons()');
+    let oPositions = [];
+    console.log(boxes);
+    // check the textContent of that container if it's x than get all x positions
+        for (let i = 0; i < boxes.length; i++) {
+            if (boxes[i].textContent === 'o') {
+                oPositions.push(boxes[i]);
+            }
+        }
+        console.log(oPositions);
+        return oPositions;
 }

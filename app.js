@@ -45,7 +45,7 @@ function trackXPosition() {
     // check the textContent of that container if it's x than get all x positions
         for (let i = 0; i < boxes.length; i++) {
             if (boxes[i].textContent === 'x') {
-                xPositions.push(boxes[i]);
+                xPositions.push(i);
             }
         }
         console.log(xPositions);
@@ -59,9 +59,14 @@ function trackOPositions() {
     // check the textContent of that container if it's x than get all x positions
         for (let i = 0; i < boxes.length; i++) {
             if (boxes[i].textContent === 'o') {
-                oPositions.push(boxes[i]);
+                oPositions.push(i);
             }
         }
         console.log(oPositions);
         return oPositions;
+}
+
+function gameResult(trackXPosition, trackOPositions) {
+    const oS = trackOPositions();
+    const xS = trackXPosition();
 }

@@ -70,14 +70,34 @@ function trackOPositions() {
 function gameResult(trackXPosition, trackOPositions) {
     const oS = trackOPositions();
     const xS = trackXPosition();
-    switch (oS) {
-        case [0,1,2].every(number => oS.includes(number)):
-            console.log(' YES it DOES');
-            break;
-    
-        default:
-            console.log('not yet');
-            break;
+
+    // All possible winning combos
+    const winningCombos = [
+        [0, 1, 2],
+        [3, 4, 5],
+        [6, 7, 8],
+        [0, 3, 6],
+        [1, 4, 7],
+        [2, 5, 8],
+        [0, 4, 8],
+        [2, 4, 6]
+    ];
+
+    // Check O positions
+    for (const combo of winningCombos) {
+        if (combo.every(num => oS.includes(num))) {
+            console.log('O wins');
+            return;
+        }
+    }
+
+    // Check X positions
+    for (const combo of winningCombos) {
+        if (combo.every(num => xS.includes(num))) {
+            console.log('X wins');
+            return;
+        }
     }
 }
+
 

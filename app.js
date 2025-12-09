@@ -5,8 +5,8 @@ const boxes = document.querySelectorAll('.box');
 let isX = true; // ! Should be Global, so the event listener wil noe reset it again
 
 
-console.log(container);
-console.log(boxes);
+// console.log(container);
+// console.log(boxes);
 
 container.addEventListener('click',assignBox);
 
@@ -19,7 +19,7 @@ function assignBox(e) {
         e.target.textContent = 'o';
         isX = true;
     }
-    console.log(e.target);
+    // console.log(e.target);
 }
 
 // The idea is that we need to track the position of the x or o using a formula of: 
@@ -30,6 +30,8 @@ function assignBox(e) {
 
 // use this function in foreach loop for the node list 
 function trackPosition(element) {
+    let positions = [...boxes];
+    console.log(positions);
     // check the textContent of that container if it's x than get all x positions
     if (element.textContent === 'x') {
         // get the index

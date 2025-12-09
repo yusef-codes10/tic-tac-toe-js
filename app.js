@@ -13,11 +13,16 @@ container.addEventListener('click',assignBox);
 
 function assignBox(e) {
     if (isX) {
-        e.target.textContent = 'x';
-        isX = false;
+        if (e.target.textContent === '') {
+            e.target.textContent = 'x';
+            isX = false;
+        }
+
     } else{
-        e.target.textContent = 'o';
-        isX = true;
+        if (e.target.textContent === '') {
+             e.target.textContent = 'o';
+            isX = true;
+        }
     }
     // console.log(e.target);
     // trackOPositions();
@@ -84,7 +89,7 @@ function gameResult(trackXPosition, trackOPositions) {
     // Check O positions
     for (const combo of winningCombos) {
         if (combo.every(num => oS.includes(num))) {
-            console.log('O wins');
+            console.log('X wins');
             return;
         }
     }
@@ -92,7 +97,7 @@ function gameResult(trackXPosition, trackOPositions) {
     // Check X positions
     for (const combo of winningCombos) {
         if (combo.every(num => xS.includes(num))) {
-            console.log('X wins');
+            console.log('O wins');
             return;
         }
     }

@@ -37,8 +37,8 @@ function trackPosition() {
     // check the textContent of that container if it's x than get all x positions
 
         for (let i = 0; i < boxes.length; i++) {
-            if (boxes.textContent === 'x') {
-                winPositions.push(positions[index]);
+            if (boxes[i].textContent === 'x') {
+                winPositions.push(boxes[i]);
             }
         }
         console.log(winPositions);
